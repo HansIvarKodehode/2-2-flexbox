@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Flexbox</h1>
+      <p>We can do some funky things with flexbox</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>basic flexbox</h2>
+        <p>
+          when we add <code>display: flex</code> to a parent element its
+          children line up in a row by default
+        </p>
+
+        <div class="container">
+          <div class="box">Box 1</div>
+          <div class="box">Box 2</div>
+          <div class="box">Box 3</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>flex direction</h2>
+        <p>
+          flexbox uses a main and cross axis. by default items go left to right
+          in a column
+        </p>
+        <div class="container directionColumn">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>justify content</h2>
+        <p>it just fies. Basically handles x axis placings</p>
+
+        <h3>Center</h3>
+        <div class="container justifyCenter">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+        <h3>Space between</h3>
+        <div class="container spcBtw">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+        <h3>End</h3>
+        <div class="container jusEnd">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+        <h3>space around</h3>
+        <div class="container spcAro">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+        <h3>space around</h3>
+        <div class="container spcEvn">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+      </section>
+      <section>
+        <h2>align content</h2>
+        <p>handles the y axis</p>
+
+        <h3>align center</h3>
+        <div class="container alCe tallContainer">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+
+        <h3>align end</h3>
+        <div class="container alEn tallContainer">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+
+        <h3>align start</h3>
+        <div class="container alSt tallContainer">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+      </section>
+      <section>
+        <h2>gap</h2>
+        <p>ads space between flex items</p>
+
+        <div class="container withGap">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+      </section>
+      <section>
+        <h2>flex wrap</h2>
+        <p>
+          Normal flex items stay in a line. <code>flex-wrap:wrap</code> lest
+          items move onto a new line if they don't have space
+        </p>
+
+        <div class="container wrapEx">
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+          <div class="box">box 1</div>
+          <div class="box">box 2</div>
+          <div class="box">box 3</div>
+        </div>
+
+        <h2>flex grow</h2>
+        <div class="container growEx">
+          <div class="box g1">box 1</div>
+          <div class="box g2">box 2</div>
+          <div class="box g3">box 3</div>
+        </div>
+        <h2>flex shrink works the exact same, but in reverse</h2>
+      </section>
+    </main>
+  </body>
+</html>

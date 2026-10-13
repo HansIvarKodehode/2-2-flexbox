@@ -1,0 +1,89 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* basic styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+section {
+  margin: 30px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #fafafa;
+}
+.box {
+  background-color: steelblue;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  min-width: 60px;
+}
+.directionColumn {
+  display: flex;
+  flex-direction: column;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.spcBtw {
+  justify-content: space-between;
+}
+.jusEnd {
+  justify-content: end;
+}
+.spcAro {
+  justify-content: space-around;
+}
+.spcEvn {
+  justify-content: space-evenly;
+}
+.tallContainer {
+  height: 200px;
+}
+.alCe {
+  align-items: center;
+}
+.alEn {
+  align-items: end;
+}
+.alSt {
+  align-items: start;
+}
+.withGap {
+  gap: 50px;
+}
+.wrapEx {
+  flex-wrap: wrap;
+}
+.growEx {
+  flex-grow: 1;
+}
+.g1 {
+  flex-grow: 1;
+}
+.g2 {
+  flex-grow: 2;
+}
+.g3 {
+  flex-grow: 3;
+}
